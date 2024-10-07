@@ -320,8 +320,9 @@ GameObject:
   - component: {fileID: 329641699064478889}
   - component: {fileID: 6269623222272968137}
   - component: {fileID: 7022198999876931145}
+  - component: {fileID: 4272880835617030752}
   m_Layer: 5
-  m_Name: Card
+  m_Name: CardToHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,14 +402,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayCard: []
-  displayId: 28
+  displayId: 3
   nameText: {fileID: 1655133333585175532}
   costText: {fileID: 128817249831201230}
   powerText: {fileID: 5193600946640018371}
   descriptionText: {fileID: 2335913422241341494}
   spriteImage: {fileID: 0}
   artImage: {fileID: 3617469828010336603}
-  cardBack: 1
+  cardBack: 0
+  Hand: {fileID: 0}
+  numberOfCardsInDeck: 0
 --- !u!114 &7022198999876931145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,6 +425,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 3518521831962497195}
+--- !u!114 &4272880835617030752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421355034177936988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18684ceecaa893e498ee4af44da04aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hand: {fileID: 0}
+  HandCard: {fileID: 1421355034177936988}
 --- !u!1 &2516840318099957100
 GameObject:
   m_ObjectHideFlags: 0
