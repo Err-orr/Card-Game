@@ -74,7 +74,7 @@ public class PlayerDeck : MonoBehaviour
                 yield return new WaitForSeconds(1); // Wait for 1 second before drawing each card
             Instantiate(CardToHand, transform.position, transform.rotation); // Instantiate a card in the hand
         }
-        }
+    }
     // Method to shuffle the deck of cards
     public void Shuffle()
     {
@@ -100,5 +100,4 @@ public class PlayerDeck : MonoBehaviour
             Instantiate(CardToHand, transform.position, transform.rotation); // Instantiate a card in the hand
         }
     }
-
 }
