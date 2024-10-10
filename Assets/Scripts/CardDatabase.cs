@@ -24,6 +24,12 @@ public class CardDatabase : MonoBehaviour
         Sprite sunflowerSprite = Resources.Load<Sprite>("Sunflower");
         Sprite electricTreeSprite = Resources.Load<Sprite>("ElectricTree");
         Sprite explosionSprite = Resources.Load<Sprite>("Explosion");
+        Sprite spearSprite = Resources.Load<Sprite>("Spear");
+        Sprite fistSprite = Resources.Load<Sprite>("Fist");
+        Sprite electricitySprite = Resources.Load<Sprite>("Electric");
+        Sprite dualWieldSprite = Resources.Load<Sprite>("DualWieldSwords");
+        Sprite freezeSprite = Resources.Load<Sprite>("FreezeSpell");
+        Sprite gargantuaSprite = Resources.Load<Sprite>("Gargantua");
         // Check if each sprite is loaded correctly; log an error if any fail
         if (fireballSprite == null)
         {
@@ -72,6 +78,30 @@ public class CardDatabase : MonoBehaviour
         if (explosionSprite == null)
         {
             Debug.LogError("Failed to load explosion sprite. Check the file path and name.");
+        }
+        if (spearSprite == null)
+        {
+            Debug.LogError("Failed to load spear sprite. Check the file path and name.");
+        }
+        if (fistSprite == null)
+        {
+            Debug.LogError("Failed to load fist sprite. Check the file path and name.");
+        }
+        if (electricitySprite == null)
+        {
+            Debug.LogError("Failed to load electric sprite. Check the file path and name.");
+        }
+        if (dualWieldSprite == null)
+        {
+            Debug.LogError("Failed to load dual wield sprite. Check the file path and name.");
+        }
+        if (freezeSprite == null)
+        {
+            Debug.LogError("Failed to load freeze sprite. Check the file path and name.");
+        }
+        if (gargantuaSprite == null)
+        {
+            Debug.LogError("Failed to load gargantua sprite. Check the file path and name.");
         }
         // Populate the cardList with various cards using the loaded sprites
         cardList.Add(new Card(0, "Fireball", 1, 3, "A deadly ball of fire.", fireballSprite));
@@ -137,9 +167,34 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(49, "Epic Explosion", 6, 15, "Explodes both sides!", explosionSprite));
         cardList.Add(new Card(50, "Legendary Explosion", 6, 22, "Explodes both sides with an even bigger explosion!", explosionSprite));
         // Spears
-        cardList.Add(new Card(51, "Uncommon Spear", 4, 5, "A spear is thrown at someone.", explosionSprite));
-        cardList.Add(new Card(52, "Rare Spear", 4, 8, "A spear is thrown at someone.", explosionSprite));
-        cardList.Add(new Card(53, "Epic Spear", 4, 10, "A spear is thrown at someone.", explosionSprite));
-        cardList.Add(new Card(54, "Legendary Spear", 4, 13, "A spear is thrown at someone.", explosionSprite));
+        cardList.Add(new Card(51, "Uncommon Spear", 4, 5, "A spear is thrown at someone.", spearSprite));
+        cardList.Add(new Card(52, "Rare Spear", 4, 8, "A strong spear is thrown at someone.", spearSprite));
+        cardList.Add(new Card(53, "Epic Spear", 4, 10, "A stronger spear is thrown at someone.", spearSprite));
+        cardList.Add(new Card(54, "Legendary Spear", 4, 13, "An even stronger spear is thrown at someone.", spearSprite));
+        // Fists
+        cardList.Add(new Card(55, "Common Fists", 1, 1, "Throw a punch!", fistSprite));
+        cardList.Add(new Card(56, "Uncommon Fists", 1, 2, "Throw a strong punch!", fistSprite));
+        cardList.Add(new Card(57, "Rare Fists", 1, 3, "Throw a massively strong punch!", fistSprite));
+        cardList.Add(new Card(58, "Epic Fists", 1, 4, "Throw an insanely strong punch!", fistSprite));
+        cardList.Add(new Card(59, "Legendary Fists", 1, 5, "Throw an outrageously strong punch!", fistSprite));
+        // Electricity
+        cardList.Add(new Card(60, "Uncommon Electricity", 5, 15, "Gives the power of electricity.", electricitySprite));
+        cardList.Add(new Card(61, "Rare Electricity", 5, 23, "Gives a strong power of electricity.", electricitySprite));
+        cardList.Add(new Card(62, "Epic Electricity", 5, 30, "Gives a stronger power of electricity.", electricitySprite));
+        cardList.Add(new Card(63, "Legendary Electricity", 5, 38, "Gives an even stronger power of electricity.", electricitySprite));
+        // Dual Wield Sword
+        cardList.Add(new Card(60, "Epic Dual Wield Swords", 4, 12, "Uses two swords.", dualWieldSprite));
+        cardList.Add(new Card(61, "Legendary Dual Wield Swords", 4, 24, "Uses two strong swords.", dualWieldSprite));
+        // Freeze
+        cardList.Add(new Card(62, "Rare Freeze", 2, 2, "A sudden chill enters the body...", freezeSprite));
+        cardList.Add(new Card(63, "Epic Freeze", 2, 4, "A strong, sudden chill enters the body...", freezeSprite));
+        cardList.Add(new Card(64, "Legendary Freeze", 2, 6, "A stronger, sudden chill enters the body...", freezeSprite));
+        // Gargantua
+        cardList.Add(new Card(65, "Garganuta", 10, 10000, "(Ultimate) (Fusion Card) Destroys all non-special cards on the field." +
+            " If all cards equate to or are greater than 10k health, then no damage is done to the opponent. Otherwise, leftover damage will apply.  One time use card.", gargantuaSprite));
+        // Ten tickles
+        cardList.Add(new Card(66, "Rare Tentacles", 3, 7, "A slimy tentacle whacks the opponent!", freezeSprite));
+        cardList.Add(new Card(67, "Epic Tentacles", 3, 10, "A slimy tentacle whacks the opponent! Hits stronger.", freezeSprite));
+        cardList.Add(new Card(68, "Legendary Tentacles", 3, 14, "A slimy tentacle whacks the opponent!Hits massively stronger.", freezeSprite));
     }
 }
