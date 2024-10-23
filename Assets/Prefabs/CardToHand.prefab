@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayCard: []
-  displayId: 3
+  displayId: 69
   nameText: {fileID: 1655133333585175532}
   costText: {fileID: 128817249831201230}
   powerText: {fileID: 5193600946640018371}
