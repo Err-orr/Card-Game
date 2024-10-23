@@ -298,7 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deck: []
   container: []
-  x: 0
+  x: 30
   cardInDeck1: {fileID: 1239530967}
   cardInDeck2: {fileID: 1491901462}
   cardInDeck3: {fileID: 128250315}
@@ -2461,7 +2461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6, y: -373}
+  m_AnchoredPosition: {x: -6, y: -244}
   m_SizeDelta: {x: -1595.243, y: -1268.7788}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710765560
@@ -3263,6 +3263,10 @@ PrefabInstance:
     - target: {fileID: 6269623222272968137, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
       propertyPath: cardBack
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269623222272968137, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
+      propertyPath: displayId
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6269623222272968137, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
       propertyPath: m_Enabled

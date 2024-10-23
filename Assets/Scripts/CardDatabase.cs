@@ -12,24 +12,24 @@ public class CardDatabase : MonoBehaviour
     void Awake()
     {
         // Load sprites for different cards from the Resources folder
-        Sprite fireballSprite = Resources.Load<Sprite>("FireballV2");
-        Sprite poisonSprite = Resources.Load<Sprite>("Poison");
-        Sprite healSprite = Resources.Load<Sprite>("Healing");
-        Sprite hailSprite = Resources.Load<Sprite>("Hail");
-        Sprite lightningSprite = Resources.Load<Sprite>("Lightning");
-        Sprite cupcakeSprite = Resources.Load<Sprite>("Cupcake");
-        Sprite diamondSwordSprite1 = Resources.Load<Sprite>("DiamondTintedSword");
-        Sprite dodgeBallSprite = Resources.Load<Sprite>("Ball");
-        Sprite pizzaSprite = Resources.Load<Sprite>("Pizza");
-        Sprite sunflowerSprite = Resources.Load<Sprite>("Sunflower");
-        Sprite electricTreeSprite = Resources.Load<Sprite>("ElectricTree");
-        Sprite explosionSprite = Resources.Load<Sprite>("Explosion");
-        Sprite spearSprite = Resources.Load<Sprite>("Spear");
-        Sprite fistSprite = Resources.Load<Sprite>("Fist");
-        Sprite electricitySprite = Resources.Load<Sprite>("Electric");
-        Sprite dualWieldSprite = Resources.Load<Sprite>("DualWieldSwords");
-        Sprite freezeSprite = Resources.Load<Sprite>("FreezeSpell");
-        Sprite gargantuaSprite = Resources.Load<Sprite>("Gargantua");
+        Sprite fireballSprite = Resources.Load<Sprite>("CardArt/FireballV2");
+        Sprite poisonSprite = Resources.Load<Sprite>("CardArt/Poison");
+        Sprite healSprite = Resources.Load<Sprite>("CardArt/Healing");
+        Sprite hailSprite = Resources.Load<Sprite>("CardArt/Hail");
+        Sprite lightningSprite = Resources.Load<Sprite>("CardArt/Lightning");
+        Sprite cupcakeSprite = Resources.Load<Sprite>("CardArt/Cupcake");
+        Sprite diamondSwordSprite1 = Resources.Load<Sprite>("CardArt/DiamondTintedSword");
+        Sprite dodgeBallSprite = Resources.Load<Sprite>("CardArt/Ball");
+        Sprite pizzaSprite = Resources.Load<Sprite>("CardArt/Pizza");
+        Sprite sunflowerSprite = Resources.Load<Sprite>("CardArt/Sunflower");
+        Sprite electricTreeSprite = Resources.Load<Sprite>("CardArt/ElectricTree");
+        Sprite explosionSprite = Resources.Load<Sprite>("CardArt/Explosion");
+        Sprite spearSprite = Resources.Load<Sprite>("CardArt/Spear");
+        Sprite fistSprite = Resources.Load<Sprite>("CardArt/Fist");
+        Sprite electricitySprite = Resources.Load<Sprite>("CardArt/Electricity");
+        Sprite dualWieldSprite = Resources.Load<Sprite>("CardArt/DualWieldSwords");
+        Sprite freezeSprite = Resources.Load<Sprite>("CardArt/FreezeSpell");
+        Sprite gargantuaSprite = Resources.Load<Sprite>("CardArt/Gargantua");
         // Check if each sprite is loaded correctly; log an error if any fail
         if (fireballSprite == null)
         {
@@ -103,19 +103,19 @@ public class CardDatabase : MonoBehaviour
         {
             Debug.LogError("Failed to load gargantua sprite. Check the file path and name.");
         }
-        // Populate the cardList with various cards using the loaded sprites
+        // Fireball cards are being added to the player deck.
         cardList.Add(new Card(0, "Fireball", 1, 3, "A deadly ball of fire.", fireballSprite));
         cardList.Add(new Card(1, "Uncommon Fireball", 1, 5, "A deadly ball of fire. Hits stronger.", fireballSprite));
         cardList.Add(new Card(2, "Rare Fireball", 1, 6, "A deadly ball of fire. Hits massively stronger.", fireballSprite));
         cardList.Add(new Card(3, "Epic Fireball", 1, 8, "A deadly ball of fire. Hits insanely stronger.", fireballSprite));
         cardList.Add(new Card(4, "Legendary Fireball", 1, 9, "A deadly ball of fire. Hits outrageously stronger.", fireballSprite));
-        // Additional card types: Poison
+        // Poison cards are being added to the player deck.
         cardList.Add(new Card(5, "Poison", 1, 2, "A bottle of poison.", poisonSprite));
         cardList.Add(new Card(6, "Uncommon Poison", 1, 3, "A bottle of poison. Hits stronger.", poisonSprite));
         cardList.Add(new Card(7, "Rare Poison", 1, 4, "A bottle of poison. Hits massively stronger.", poisonSprite));
         cardList.Add(new Card(8, "Epic Poison", 1, 5, "A bottle of poison. Hits insanely stronger.", poisonSprite));
         cardList.Add(new Card(9, "Legendary Poison", 1, 6, "A bottle of. Hits outrageously stronger.", poisonSprite));
-        // Additional card types: Heal
+        // Healing cards
         cardList.Add(new Card(10, "Heal", 1, 1, "A surge of healing.", healSprite));
         cardList.Add(new Card(11, "Uncommon Heal", 1, 2, "A strong surge of healing.", healSprite));
         cardList.Add(new Card(12, "Rare Heal", 1, 3, "A massive surge of healing.", healSprite));
@@ -183,18 +183,17 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(62, "Epic Electricity", 5, 30, "Gives a stronger power of electricity.", electricitySprite));
         cardList.Add(new Card(63, "Legendary Electricity", 5, 38, "Gives an even stronger power of electricity.", electricitySprite));
         // Dual Wield Sword
-        cardList.Add(new Card(60, "Epic Dual Wield Swords", 4, 12, "Uses two swords.", dualWieldSprite));
-        cardList.Add(new Card(61, "Legendary Dual Wield Swords", 4, 24, "Uses two strong swords.", dualWieldSprite));
+        cardList.Add(new Card(64, "Epic Dual Wield Swords", 4, 12, "Uses two swords.", dualWieldSprite));
+        cardList.Add(new Card(65, "Legendary Dual Wield Swords", 4, 24, "Uses two strong swords.", dualWieldSprite));
         // Freeze
-        cardList.Add(new Card(62, "Rare Freeze", 2, 2, "A sudden chill enters the body...", freezeSprite));
-        cardList.Add(new Card(63, "Epic Freeze", 2, 4, "A strong, sudden chill enters the body...", freezeSprite));
-        cardList.Add(new Card(64, "Legendary Freeze", 2, 6, "A stronger, sudden chill enters the body...", freezeSprite));
+        cardList.Add(new Card(66, "Rare Freeze", 2, 2, "A sudden chill enters the body...", freezeSprite));
+        cardList.Add(new Card(67, "Epic Freeze", 2, 4, "A strong, sudden chill enters the body...", freezeSprite));
+        cardList.Add(new Card(68, "Legendary Freeze", 2, 6, "A stronger, sudden chill enters the body...", freezeSprite));
         // Gargantua
-        cardList.Add(new Card(65, "Garganuta", 10, 10000, "(Ultimate) (Fusion Card) Destroys all non-special cards on the field." +
-            " If all cards equate to or are greater than 10k health, then no damage is done to the opponent. Otherwise, leftover damage will apply.  One time use card.", gargantuaSprite));
+        cardList.Add(new Card(69, "Gargantua", 10, 10000, "(Ultimate) (Fusion Card)", gargantuaSprite));
         // Ten tickles
-        cardList.Add(new Card(66, "Rare Tentacles", 3, 7, "A slimy tentacle whacks the opponent!", freezeSprite));
-        cardList.Add(new Card(67, "Epic Tentacles", 3, 10, "A slimy tentacle whacks the opponent! Hits stronger.", freezeSprite));
-        cardList.Add(new Card(68, "Legendary Tentacles", 3, 14, "A slimy tentacle whacks the opponent!Hits massively stronger.", freezeSprite));
+        cardList.Add(new Card(70, "Rare Tentacles", 3, 7, "A slimy tentacle whacks the opponent!", freezeSprite));
+        cardList.Add(new Card(71, "Epic Tentacles", 3, 10, "A slimy tentacle whacks the opponent! Hits stronger.", freezeSprite));
+        cardList.Add(new Card(72, "Legendary Tentacles", 3, 14, "A slimy tentacle whacks the opponent! Hits massively stronger.", freezeSprite));
     }
 }

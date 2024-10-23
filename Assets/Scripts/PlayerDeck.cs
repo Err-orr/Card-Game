@@ -14,7 +14,7 @@ public class PlayerDeck : MonoBehaviour
     // Variable for managing card count (not currently used)
     public int x;
     // Static variable to define the size of the deck
-    public static int deckSize = 40; // Set your deck size here
+    public static int deckSize = 10; // Set your deck size here
     // GameObjects representing cards in the deck for UI purposes
     public GameObject cardInDeck1;
     public GameObject cardInDeck2;

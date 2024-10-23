@@ -34,30 +34,30 @@ public class TurnSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Update the turn text based on whose turn it is
+        // Update the turn text based on whose turn it is.
         if (isYourTurn)
         {
-            turnText.text = "Your Turn"; // Display player's turn
+            turnText.text = "Your Turn"; // Display your turn
         } else
         {
-            turnText.text = "Opponent's Turn"; // Display opponent's turn
+            turnText.text = "Opponent's Turn"; // Display the opponent's turn
         }
-        // Update the mana text to show current and maximum mana
+        // Update the cost/mana text to show what current and maximum cost/mana is.
         manaText.text = currentMana + "/" + maxMana;
     }
-    // Method to end the player's turn
+    // Here's the method to end the player's turn
     public void EndYourTurn()
     {
-        isYourTurn = false;            // Set player's turn to false
-        isOpponentTurn += 1;           // Increment opponent's turn count
+        isYourTurn = false;            // This is false so the player doesn't go.
+        isOpponentTurn += 1;           // Increments how many times the opponent went.
     }
-    // Method to end the opponent's turn and prepare for the player's next turn
+    // Here's the method to end the opponent's turn and prepare for the player's next turn
     public void EndOpponentTurn()
     {
-        isYourTurn = true;             // Set player's turn to true
-        yourTurn += 1;                 // Increment player's turn count
-        maxMana += 1;                  // Increase maximum mana by 1
-        currentMana = maxMana;         // Reset current mana to maximum
-        startTurn = true;              // Indicate that a new turn has started
+        isYourTurn = true;             // Set player's turn to true so they can play next turn.
+        yourTurn += 1;                 // Increments how many times the player went.
+        maxMana += 1;                  // Increase the max mana/cost by 1.
+        currentMana = maxMana;         // Reset current mana to maximum for the player's next turn.
+        startTurn = true;              // Indicates that a new turn has begun.
     }
 }

@@ -83,7 +83,7 @@ public class DisplayCard : MonoBehaviour
         powerText.text = card.power.ToString();             // Set card power
         descriptionText.text = card.cardDescription;        // Set card description
         artImage.sprite = card.spriteImage;                 // Set card art image
-        // Check if the sprite is null and log an error if it is
+        // Check if the sprite is null and log an error if it isr
         if (artImage.sprite == null)
         {
             Debug.LogError("Sprite is null for card: " + card.cardName);

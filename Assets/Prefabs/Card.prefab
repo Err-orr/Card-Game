@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayCard: []
-  displayId: 28
+  displayId: 25
   nameText: {fileID: 1655133333585175532}
   costText: {fileID: 128817249831201230}
   powerText: {fileID: 5193600946640018371}
@@ -409,6 +409,8 @@ MonoBehaviour:
   spriteImage: {fileID: 0}
   artImage: {fileID: 3617469828010336603}
   cardBack: 1
+  Hand: {fileID: 0}
+  numberOfCardsInDeck: 0
 --- !u!114 &7022198999876931145
 MonoBehaviour:
   m_ObjectHideFlags: 0
