@@ -298,7 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deck: []
   container: []
-  x: 30
+  x: 10
   cardInDeck1: {fileID: 1239530967}
   cardInDeck2: {fileID: 1491901462}
   cardInDeck3: {fileID: 128250315}
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 364645238}
   - component: {fileID: 364645237}
   m_Layer: 5
-  m_Name: PlayerImage
+  m_Name: OpponentImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9377808f8281486429ab2a133ff463a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b7a7a23dc61d8c4bbe0b5d20344ab7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 91b3b6fd9b6ede340927966fdf1e2fd0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df6767dfe33794b408179b09aa83d7d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3259,6 +3259,22 @@ PrefabInstance:
     - target: {fileID: 1421355034177936988, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
       propertyPath: m_TagString
       value: Clone
+      objectReference: {fileID: 0}
+    - target: {fileID: 2335913422241341494, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2335913422241341494, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2335913422241341494, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2335913422241341494, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6269623222272968137, guid: f29dfd07d3baa044ea6a5607991fd7d7, type: 3}
       propertyPath: cardBack
